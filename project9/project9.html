@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Project 6</title>
+    <style>
+         .fixed-size-image {
+            width: 300px;  
+            height: 200px; 
+            object-fit: cover;
+    </style>
+    </head>
+    <body>
+      <script type = "text/javascript">
+       var pictures = ["pic1.jpeg", "pic2.jpeg", "pic3.jpeg", "pic4.jpeg", "pic5.jpeg","pic6.jpeg", "pic7.jpeg", "pic8.jpeg", "pic9.jpeg", "pic10.jpeg"];   
+          
+        function random() {
+        var randomIndex = Math.floor(Math.random() * pictures.length);
+        document.body.innerHTML = '<img src="' + pictures[randomIndex] + '"class="fixed-size-image"/>';}
+
+        window.onload = function(){
+        random();
+        setInterval(random, 2000);}; 
+          
+      </script>
+    </body>
+</html>    

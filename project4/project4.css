@@ -1,0 +1,28 @@
+.p1 { margin-left: 20px;
+    margin-right: 20px;
+    background-color: pink;
+    color: blue;}
+.p2 { text-indent: 19px;
+    font-size: 24px;
+    color: red;
+    background-color: yellow;
+    border-style: dashed;
+}
+.p3 { border: solid;
+    border-width: 10px;
+    border-left-color: #FF00FF;
+    border-right-color: #FF0000;
+    border-top-color: #FFFF00;
+    border-bottom-color: #00FF00;}
+h1 { background-color: blue;
+   text-align: center;}
+h2 { background-image: url(background.jpeg);
+   background-repeat: repeat-x;}
+.links { color: red;}
+.links:visited { color:red;}
+.links:hover { background-color: #66FF66;}
+.plant1 { float:left;
+        border: 2px dotted black;
+}
+.plant2 { float: right;
+        border: 2px dotted black;}

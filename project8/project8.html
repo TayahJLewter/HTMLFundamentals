@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Project 6</title></head>
+    <body>
+      <script type = "text/javascript">
+let sums = new Array(13).fill(0);
+for (let i = 0; i < 36000; i++) {
+  let die1 = Math.floor(Math.random() * 6) + 1;
+  let die2 = Math.floor(Math.random() * 6) + 1;
+  let sum = die1 + die2;
+  
+  sums[sum]++;
+}
+
+document.write('<table border=1>');
+document.write('<tr><th>Sum of Dice</th><th>Total Times Rolled</th></tr>');
+for (let i = 2; i <= 12; i++) {
+  document.write('<tr><td>' + i + '</td><td>' + sums[i] + '</td></tr>');
+}
+document.write('</table>');
+          
+      </script>
+    </body>
+</html>

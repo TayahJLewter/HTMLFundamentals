@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 6</title> 
+    </head>
+    <body>
+        <script type = "text/javascript">
+            let continueInput = true;
+            let totalMpg = 0;
+            let totalMiles = 0;
+            let totalGallons = 0;
+            
+            while (continueInput)
+                {
+            let miles = parseInt(window.prompt("Enter miles driven:", "0"));
+            let gallons = parseInt(window.prompt("Enter the amount of gallons used:", "0"));
+            let mpg = miles / gallons;
+            totalMiles += miles;
+            totalGallons += gallons;
+            totalMpg = totalMiles / totalGallons;
+                    
+                    
+            document.writeln("Miles driven: "+miles+ "<br>");
+            document.writeln("Gallons used: "+gallons+ "<br>");
+            document.writeln("MPG this tankful: "+mpg+ "<br>");
+            document.writeln("Total MPG: " + totalMpg+"<br><br>");      
+                    
+                    
+            continueInput = confirm("Select ok to enter more tankfuls or cancel to display all tankfuls")
+                }
+        </script>
+    </body>
+</html>

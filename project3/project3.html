@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Registration Form</title></head>
+    <body>
+    <form action="file:///Users/tayah/Dropbox/CIT3332_TayahLewter/project3/result.html">
+        <p>Welcome to the registration form! Please answer the following questions.</p><br>
+        <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" autofocus><br><br>
+        <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName"><br><br>
+        <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="youremail@domain.com" required><br><br>
+        <label for="Date">Date of Birth:</label>
+        <input type="date" id="Date" name="Date"><br><br>
+
+        <label for="Phone">Telephone number:</label>
+            <input type="tel" id="Phone" placeholder="336-222-2222" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+        
+        <label for="favoriteColor">Favorite Color:</label>
+            <input type="text" id="favoriteColor" name="favoriteColor" placeholder="Select color" list="colors">
+            <datalist id="colors">
+            <option value="Pink">
+            <option value="Purple">
+            <option value="White">
+            <option value="Black">
+            <option value="Orange">
+            <option value="Yellow">
+            <option value="Red">
+            <option value="Blue">
+            <option value="Brown">
+            </datalist><br><br>  
+        <label for="FavoriteDay">Favorite day of the week:</label>
+            <input type="text" id="FavoriteDay" placeholder="Select day" autocomplete="on" list="days">
+            <datalist id="days">
+            <option value="Monday">
+            <option value="Tuesday">
+            <option value="Wednesday">
+            <option value="Thursday">
+            <option value="Friday">
+            <option value="Saturday">
+            <option value="Sunday">
+            </datalist><br><br>
+        
+        <details>
+        <summary>What is your classification?</summary>
+        <label><input type=radio name="Classification" value="Freshman">Freshman</label>
+        <label><input type=radio name="Classification" value="Sophmore">Sophmore</label>
+        <label><input type=radio name="Classification" value="Junior">Junior</label>
+        <label><input type=radio name="Classification" value="Senior">Senior</label><br>
+        </details>
+         <br><input type="submit" value="Submit">
+            <input type="reset" value="Clear">   
+    </form>    
+    </body>
+</html>
