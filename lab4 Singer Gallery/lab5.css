@@ -1,0 +1,18 @@
+       .artists {
+            width: 200px; 
+            height:250px;
+            display: inline-block;
+            vertical-align: top;
+            float:left;
+            margin: 2px;}
+
+        .artists,desc {
+             font-family: Arial, sans-serif;
+            border: 2px solid blue;
+            border-radius: 5px;
+            padding: 10px;
+}
+        .desc{text-align: center}
+        .artists:hover{
+            opacity: 0.7;
+            margin: 3px;}
